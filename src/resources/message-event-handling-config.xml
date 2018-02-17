@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="message" class="com.springApp.springIoC.Message">
+        <property name="message" value="This is a simple message."/>
+    </bean>
+    <bean id="myStartEventHandler"
+          class="com.springApp.springIoC.MyStartEventHandler"/>
+    <bean id="myStopEventHandler"
+          class="com.springApp.springIoC.MyStopEventHandler"/>
+    <bean id="myRefreshEventHandler"
+          class="com.springApp.springIoC.MyRefreshEventHandler"/>
+
+</beans>
